@@ -6,7 +6,7 @@ class EditenoteviewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
+    return Padding(
       padding: EdgeInsets.symmetric(horizontal: 24),
       child: Column(
         children: [
@@ -16,7 +16,33 @@ class EditenoteviewBody extends StatelessWidget {
           CustomAppBar(
             titleCHeck: "Edite Note",
             icona: Icons.check,
-          )
+          ),
+          TextField(
+            decoration: InputDecoration(
+              hintText: "title ",
+              hintStyle: const TextStyle(
+                fontSize: 32,
+              ),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 23,
+          ),
+          TextField(
+            maxLines: 8,
+            decoration: InputDecoration(
+              hintText: "entre your note  ",
+              hintStyle: const TextStyle(
+                fontSize: 32,
+              ),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+            ),
+          ),
         ],
       ),
     );
