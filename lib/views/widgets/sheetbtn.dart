@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Sheetbtn extends StatelessWidget {
-  const Sheetbtn({super.key});
+  const Sheetbtn({super.key, required this.btnName});
+  final String btnName;
 
   @override
   Widget build(BuildContext context) {
@@ -13,9 +14,9 @@ class Sheetbtn extends StatelessWidget {
         height: 55,
         decoration: BoxDecoration(
             color: Colors.amber, borderRadius: BorderRadius.circular(16)),
-        child: const Center(
+        child: Center(
           child: Text(
-            "Add",
+            btnName,
             style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
           ),
         ),

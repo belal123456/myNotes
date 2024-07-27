@@ -38,7 +38,9 @@ class BtnSheet extends StatelessWidget {
                 ),
               ),
             ),
-            const Sheetbtn(),
+            const Sheetbtn(
+              btnName: "Add",
+            ),
           ],
         ),
       ),

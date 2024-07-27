@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notes/views/widgets/custom_app_bar.dart';
+import 'package:notes/views/widgets/sheetbtn.dart';
 
 class EditenoteviewBody extends StatelessWidget {
   const EditenoteviewBody({super.key});
@@ -22,7 +23,7 @@ class EditenoteviewBody extends StatelessWidget {
           ),
           TextField(
             decoration: InputDecoration(
-              hintText: "title ",
+              hintText: "belal ",
               hintStyle: const TextStyle(
                 fontSize: 32,
               ),
@@ -35,7 +36,7 @@ class EditenoteviewBody extends StatelessWidget {
             height: 23,
           ),
           TextField(
-            maxLines: 8,
+            maxLines: 4,
             decoration: InputDecoration(
               hintText: "entre your note  ",
               hintStyle: const TextStyle(
@@ -45,6 +46,9 @@ class EditenoteviewBody extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
               ),
             ),
+          ),
+          const Sheetbtn(
+            btnName: "Save",
           ),
         ],
       ),
