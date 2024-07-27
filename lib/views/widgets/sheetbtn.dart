@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
 class Sheetbtn extends StatelessWidget {
-  const Sheetbtn({super.key, required this.btnName});
+  const Sheetbtn({super.key, required this.btnName, this.onTap});
   final String btnName;
+  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: onTap,
       child: Container(
         margin: const EdgeInsets.only(top: 24),
         width: MediaQuery.of(context).size.width,
