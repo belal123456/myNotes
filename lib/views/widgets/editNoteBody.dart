@@ -17,6 +17,9 @@ class EditenoteviewBody extends StatelessWidget {
             titleCHeck: "Edite Note",
             icona: Icons.check,
           ),
+          SizedBox(
+            height: 23,
+          ),
           TextField(
             decoration: InputDecoration(
               hintText: "title ",
