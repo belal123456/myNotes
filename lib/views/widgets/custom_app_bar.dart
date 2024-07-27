@@ -20,7 +20,7 @@ class CustomAppBar extends StatelessWidget {
         const Spacer(
           flex: 1,
         ),
-        CustomsearchIcon(ICOns: icona),
+        CustomsearchIcon(iCOns: icona),
       ],
     );
   }

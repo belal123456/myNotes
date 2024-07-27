@@ -6,9 +6,7 @@ class Sheetbtn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        print("belal");
-      },
+      onTap: () {},
       child: Container(
         margin: const EdgeInsets.only(top: 24),
         width: MediaQuery.of(context).size.width,
